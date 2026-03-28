@@ -169,7 +169,7 @@ export default function EventPageClientComponent({
 
 
 
-      <div
+      {/* <div
         style={{
           display: "flex",
           width: "95vw",
@@ -181,7 +181,7 @@ export default function EventPageClientComponent({
           margin: "2rem 0rem",
           boxSizing: "border-box",
         }}
-      >
+      > */}
         {/* <EventDetails
           icon="clock"
           header="When"
@@ -208,7 +208,7 @@ export default function EventPageClientComponent({
           bodyColor="rgb(var(--color-font-accent))"
         /> */}
       {/* ^^^ */}
-      </div>
+      {/* </div> */}
 
 
 
