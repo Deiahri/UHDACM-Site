@@ -182,12 +182,12 @@ export default function EventPageClientComponent({
           boxSizing: "border-box",
         }}
       >
-        <EventDetails
+        {/* <EventDetails
           icon="clock"
           header="When"
           body={`${subheader}`}
           bodyColor="rgb(var(--color-font-primary))"
-        />
+        /> */}
         {/* <EventDetails
           icon="location"
           header="Where"
