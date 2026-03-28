@@ -169,7 +169,6 @@ export default function EventPageClientComponent({
 
 
 
-      {/* vvv */}
       <div
         style={{
           display: "flex",
@@ -183,7 +182,7 @@ export default function EventPageClientComponent({
           boxSizing: "border-box",
         }}
       >
-        {/* <EventDetails
+        <EventDetails
           icon="clock"
           header="When"
           body={`${subheader}`}
@@ -194,8 +193,12 @@ export default function EventPageClientComponent({
           header="Where"
           body={event.location || "Location not specified"}
           bodyColor="rgb(var(--color-font-secondary))"
-        /> */}
-        <EventDetails
+        />
+        <span style={{color: 'white'}}>
+          {JSON.stringify(event, null, 2)}
+        </span>
+      {/* vvv */}
+        {/* <EventDetails
           icon="people"
           header="Host"
           body={
@@ -203,9 +206,9 @@ export default function EventPageClientComponent({
             "No host specified"
           }
           bodyColor="rgb(var(--color-font-accent))"
-        />
-      </div>
+        /> */}
       {/* ^^^ */}
+      </div>
 
 
 
