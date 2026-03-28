@@ -194,9 +194,9 @@ export default function EventPageClientComponent({
           body={event.location || "Location not specified"}
           bodyColor="rgb(var(--color-font-secondary))"
         />
-        <span style={{color: 'white'}}>
+        {/* <span style={{color: 'white'}}>
           {JSON.stringify(event, null, 2)}
-        </span>
+        </span> */}
       {/* vvv */}
         {/* <EventDetails
           icon="people"
