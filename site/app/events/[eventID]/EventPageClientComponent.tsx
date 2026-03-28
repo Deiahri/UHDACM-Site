@@ -169,7 +169,7 @@ export default function EventPageClientComponent({
 
 
 
-      {/* <div
+      <div
         style={{
           display: "flex",
           width: "95vw",
@@ -181,24 +181,23 @@ export default function EventPageClientComponent({
           margin: "2rem 0rem",
           boxSizing: "border-box",
         }}
-      > */}
-        {/* <EventDetails
+      >
+        <EventDetails
           icon="clock"
           header="When"
           body={`${subheader}`}
           bodyColor="rgb(var(--color-font-primary))"
-        /> */}
-        {/* <EventDetails
+        />
+        <EventDetails
           icon="location"
           header="Where"
           body={event.location || "Location not specified"}
           bodyColor="rgb(var(--color-font-secondary))"
-        /> */}
-        {/* <span style={{color: 'white'}}>
+        />
+        <span style={{color: 'white'}}>
           {JSON.stringify(event)}
-        </span> */}
-      {/* vvv */}
-        {/* <EventDetails
+        </span>
+        <EventDetails
           icon="people"
           header="Host"
           body={
@@ -206,16 +205,15 @@ export default function EventPageClientComponent({
             "No host specified"
           }
           bodyColor="rgb(var(--color-font-accent))"
-        /> */}
-      {/* ^^^ */}
-      {/* </div> */}
+        />
+      </div>
 
 
 
 
 
 
-      <div className="SectionRoot">
+      {/* <div className="SectionRoot">
         <div className="SectionInner">
           <div className={styles.eventDescription}>
             <h1 className="H1">Event Description</h1>
@@ -226,7 +224,7 @@ export default function EventPageClientComponent({
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
