@@ -137,7 +137,7 @@ export default function EventPageClientComponent({
 
 
 
-      {/* <NavbarPadding />
+      <NavbarPadding />
       <MainHeroSection
         spanText="EVENT"
         title={event.name}
@@ -155,7 +155,21 @@ export default function EventPageClientComponent({
             {hasGallery && <ViewGalleryButton />}
           </div>
         }
-      /> */}
+      />
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* vvv */}
       <div
         style={{
           display: "flex",
@@ -191,7 +205,7 @@ export default function EventPageClientComponent({
           bodyColor="rgb(var(--color-font-accent))"
         />
       </div>
-      <div className="SectionRoot">
+      {/* <div className="SectionRoot">
         <div className="SectionInner">
           <div className={styles.eventDescription}>
             <h1 className="H1">Event Description</h1>
@@ -202,7 +216,13 @@ export default function EventPageClientComponent({
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      {/* ^^^ */}
+
+
+
+
+
 
 
 
