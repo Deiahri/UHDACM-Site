@@ -169,7 +169,7 @@ export default function EventPageClientComponent({
 
 
 
-      <div
+      {/* <div
         style={{
           display: "flex",
           width: "95vw",
@@ -206,11 +206,7 @@ export default function EventPageClientComponent({
           }
           bodyColor="rgb(var(--color-font-accent))"
         />
-      </div>
-
-
-
-
+      </div> */}
 
 
       {/* <div className="SectionRoot">
