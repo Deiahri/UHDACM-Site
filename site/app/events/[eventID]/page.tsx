@@ -62,6 +62,9 @@ export default async function EventPage({
     }
   }
 
+  return <span>{eventID} gooch</span>;
+
+
   return (
     <WrapInNavbarAndFooter>
       <EventPageClientComponent event={event} media={media} />
