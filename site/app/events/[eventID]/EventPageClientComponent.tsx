@@ -131,7 +131,7 @@ export default function EventPageClientComponent({
         position: "relative",
       }}
     >
-      <NavbarPadding />
+      {/* <NavbarPadding />
       <MainHeroSection
         spanText="EVENT"
         title={event.name}
@@ -196,8 +196,11 @@ export default function EventPageClientComponent({
             </div>
           </div>
         </div>
-      </div>
-      {/* {hasGallery && (
+      </div> */}
+
+
+
+      {hasGallery && (
         <div
           id={GALLERY_SECTION_ID}
           style={{
@@ -213,8 +216,8 @@ export default function EventPageClientComponent({
           </div>
           <GalleryGrid media={media} />
         </div>
-      )} */}
-      {/* <CallToActionSection
+      )}
+      <CallToActionSection
         title={`Show up, Schedule, Share`}
         subtitle="Your next step is your best step. Be sure to make it count!"
         actionComponent={
@@ -242,7 +245,7 @@ export default function EventPageClientComponent({
             </Button>
           </div>
         }
-      /> */}
+      />
     </div>
   );
 }
