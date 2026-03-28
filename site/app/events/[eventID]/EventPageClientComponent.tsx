@@ -188,14 +188,14 @@ export default function EventPageClientComponent({
           body={`${subheader}`}
           bodyColor="rgb(var(--color-font-primary))"
         />
-        <EventDetails
+        {/* <EventDetails
           icon="location"
           header="Where"
           body={event.location || "Location not specified"}
           bodyColor="rgb(var(--color-font-secondary))"
-        />
+        /> */}
         {/* <span style={{color: 'white'}}>
-          {JSON.stringify(event, null, 2)}
+          {JSON.stringify(event)}
         </span> */}
       {/* vvv */}
         {/* <EventDetails
