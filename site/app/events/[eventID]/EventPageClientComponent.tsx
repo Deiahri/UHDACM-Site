@@ -150,7 +150,7 @@ export default function EventPageClientComponent({
 
 
 
-      {/* <MainHeroSection
+      <MainHeroSection
         spanText="EVENT"
         title={event.name}
         leftStyle={{ flex: 1 }}
@@ -167,9 +167,9 @@ export default function EventPageClientComponent({
             {hasGallery && <ViewGalleryButton />}
           </div>
         }
-      /> */}
+      />
 
-      {/* <div
+      <div
         style={{
           display: "flex",
           width: "95vw",
@@ -206,10 +206,10 @@ export default function EventPageClientComponent({
           }
           bodyColor="rgb(var(--color-font-accent))"
         />
-      </div> */}
+      </div>
 
 
-      {/* <div className="SectionRoot">
+      <div className="SectionRoot">
         <div className="SectionInner">
           <div className={styles.eventDescription}>
             <h1 className="H1">Event Description</h1>
@@ -220,14 +220,14 @@ export default function EventPageClientComponent({
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
 
 
 
 
 
-      {/* {hasGallery && (
+      {hasGallery && (
         <div
           id={GALLERY_SECTION_ID}
           style={{
@@ -243,7 +243,7 @@ export default function EventPageClientComponent({
           </div>
           <GalleryGrid media={media} />
         </div>
-      )} */}
+      )}
 
 
 
