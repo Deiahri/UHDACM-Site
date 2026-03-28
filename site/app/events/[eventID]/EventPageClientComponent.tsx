@@ -183,7 +183,7 @@ export default function EventPageClientComponent({
           boxSizing: "border-box",
         }}
       >
-        <EventDetails
+        {/* <EventDetails
           icon="clock"
           header="When"
           body={`${subheader}`}
@@ -194,7 +194,7 @@ export default function EventPageClientComponent({
           header="Where"
           body={event.location || "Location not specified"}
           bodyColor="rgb(var(--color-font-secondary))"
-        />
+        /> */}
         <EventDetails
           icon="people"
           header="Host"
@@ -205,7 +205,14 @@ export default function EventPageClientComponent({
           bodyColor="rgb(var(--color-font-accent))"
         />
       </div>
-      {/* <div className="SectionRoot">
+      {/* ^^^ */}
+
+
+
+
+
+
+      <div className="SectionRoot">
         <div className="SectionInner">
           <div className={styles.eventDescription}>
             <h1 className="H1">Event Description</h1>
@@ -216,8 +223,7 @@ export default function EventPageClientComponent({
             </div>
           </div>
         </div>
-      </div> */}
-      {/* ^^^ */}
+      </div>
 
 
 
