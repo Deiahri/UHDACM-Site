@@ -131,6 +131,12 @@ export default function EventPageClientComponent({
         position: "relative",
       }}
     >
+
+
+
+
+
+
       {/* <NavbarPadding />
       <MainHeroSection
         spanText="EVENT"
@@ -149,7 +155,7 @@ export default function EventPageClientComponent({
             {hasGallery && <ViewGalleryButton />}
           </div>
         }
-      />
+      /> */}
       <div
         style={{
           display: "flex",
@@ -196,7 +202,22 @@ export default function EventPageClientComponent({
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
