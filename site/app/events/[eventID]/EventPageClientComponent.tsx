@@ -121,130 +121,133 @@ export default function EventPageClientComponent({
     subheader = `${formatDate(dateStart)}, ${formatTime(dateStart)}`;
   }
 
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        position: "relative",
-      }}
-    >
-      <NavbarPadding />
-      <MainHeroSection
-        spanText="EVENT"
-        title={event.name}
-        leftStyle={{ flex: 1 }}
-        rightStyle={{ flex: 1 }}
-        rightContent={
-          isStrapiPicture(event.previewImage) ? (
-            <HeroSingleImage image={event.previewImage} />
-          ) : undefined
-        }
-        bottomContent={
-          <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-            {showCalendar && <CalendarButton event={event} />}
-            <ShareEventButton event={event} />
-            {hasGallery && <ViewGalleryButton />}
-          </div>
-        }
-      />
-      <div
-        style={{
-          display: "flex",
-          width: "95vw",
-          maxWidth: "var(--page-max-width)",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          alignItems: "start",
-          gap: "1rem",
-          margin: "2rem 0rem",
-          boxSizing: "border-box",
-        }}
-      >
-        <EventDetails
-          icon="clock"
-          header="When"
-          body={`${subheader}`}
-          bodyColor="rgb(var(--color-font-primary))"
-        />
-        <EventDetails
-          icon="location"
-          header="Where"
-          body={event.location || "Location not specified"}
-          bodyColor="rgb(var(--color-font-secondary))"
-        />
-        <EventDetails
-          icon="people"
-          header="Host"
-          body={
-            event.organizations?.map((org) => org.name).join(", ") ||
-            "No host specified"
-          }
-          bodyColor="rgb(var(--color-font-accent))"
-        />
-      </div>
-      <div className="SectionRoot">
-        <div className="SectionInner">
-          <div className={styles.eventDescription}>
-            <h1 className="H1">Event Description</h1>
-            <div style={{ display: "flex", flexDirection: "column", maxWidth: '100%' }}>
-              {event.descriptionFull && (
-                <StrapiRichTextRenderer content={event.descriptionFull} />
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-      {hasGallery && (
-        <div
-          id={GALLERY_SECTION_ID}
-          style={{
-            scrollMarginTop: "5rem",
-            width: "100%",
-            marginTop: "4rem",
-          }}
-        >
-          <div className="SectionRoot">
-            <div className="SectionInner" style={{ alignItems: "center" }}>
-              <h1 className="H1">Gallery</h1>
-            </div>
-          </div>
-          <GalleryGrid media={media} />
-        </div>
-      )}
-      <CallToActionSection
-        title={`Show up, Schedule, Share`}
-        subtitle="Your next step is your best step. Be sure to make it count!"
-        actionComponent={
-          <div
-            style={{
-              display: "flex",
-              gap: "0.5rem",
-              flexDirection: "row",
-              alignContent: "center",
-              justifyContent: "center",
-              flexWrap: "wrap",
-            }}
-          >
-            {showCalendar && <CalendarButton event={event} />}
-            <ShareEventButton event={event} />
-            <Button
-              style={{
-                display: "flex",
-                gap: "0.5rem",
-                justifyContent: "center",
-              }}
-              href="/events#search"
-            >
-              Other Events {getDefaultIconForCMSButton("chevron-right")}
-            </Button>
-          </div>
-        }
-      />
-    </div>
-  );
+    return <span>Gooch Platnum {event.name}</span>
+
+
+  // return (
+  //   <div
+  //     style={{
+  //       display: "flex",
+  //       flexDirection: "column",
+  //       alignItems: "center",
+  //       justifyContent: "center",
+  //       position: "relative",
+  //     }}
+  //   >
+  //     <NavbarPadding />
+  //     <MainHeroSection
+  //       spanText="EVENT"
+  //       title={event.name}
+  //       leftStyle={{ flex: 1 }}
+  //       rightStyle={{ flex: 1 }}
+  //       rightContent={
+  //         isStrapiPicture(event.previewImage) ? (
+  //           <HeroSingleImage image={event.previewImage} />
+  //         ) : undefined
+  //       }
+  //       bottomContent={
+  //         <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+  //           {showCalendar && <CalendarButton event={event} />}
+  //           <ShareEventButton event={event} />
+  //           {hasGallery && <ViewGalleryButton />}
+  //         </div>
+  //       }
+  //     />
+  //     <div
+  //       style={{
+  //         display: "flex",
+  //         width: "95vw",
+  //         maxWidth: "var(--page-max-width)",
+  //         flexWrap: "wrap",
+  //         justifyContent: "center",
+  //         alignItems: "start",
+  //         gap: "1rem",
+  //         margin: "2rem 0rem",
+  //         boxSizing: "border-box",
+  //       }}
+  //     >
+  //       <EventDetails
+  //         icon="clock"
+  //         header="When"
+  //         body={`${subheader}`}
+  //         bodyColor="rgb(var(--color-font-primary))"
+  //       />
+  //       <EventDetails
+  //         icon="location"
+  //         header="Where"
+  //         body={event.location || "Location not specified"}
+  //         bodyColor="rgb(var(--color-font-secondary))"
+  //       />
+  //       <EventDetails
+  //         icon="people"
+  //         header="Host"
+  //         body={
+  //           event.organizations?.map((org) => org.name).join(", ") ||
+  //           "No host specified"
+  //         }
+  //         bodyColor="rgb(var(--color-font-accent))"
+  //       />
+  //     </div>
+  //     <div className="SectionRoot">
+  //       <div className="SectionInner">
+  //         <div className={styles.eventDescription}>
+  //           <h1 className="H1">Event Description</h1>
+  //           <div style={{ display: "flex", flexDirection: "column", maxWidth: '100%' }}>
+  //             {event.descriptionFull && (
+  //               <StrapiRichTextRenderer content={event.descriptionFull} />
+  //             )}
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //     {hasGallery && (
+  //       <div
+  //         id={GALLERY_SECTION_ID}
+  //         style={{
+  //           scrollMarginTop: "5rem",
+  //           width: "100%",
+  //           marginTop: "4rem",
+  //         }}
+  //       >
+  //         <div className="SectionRoot">
+  //           <div className="SectionInner" style={{ alignItems: "center" }}>
+  //             <h1 className="H1">Gallery</h1>
+  //           </div>
+  //         </div>
+  //         <GalleryGrid media={media} />
+  //       </div>
+  //     )}
+  //     <CallToActionSection
+  //       title={`Show up, Schedule, Share`}
+  //       subtitle="Your next step is your best step. Be sure to make it count!"
+  //       actionComponent={
+  //         <div
+  //           style={{
+  //             display: "flex",
+  //             gap: "0.5rem",
+  //             flexDirection: "row",
+  //             alignContent: "center",
+  //             justifyContent: "center",
+  //             flexWrap: "wrap",
+  //           }}
+  //         >
+  //           {showCalendar && <CalendarButton event={event} />}
+  //           <ShareEventButton event={event} />
+  //           <Button
+  //             style={{
+  //               display: "flex",
+  //               gap: "0.5rem",
+  //               justifyContent: "center",
+  //             }}
+  //             href="/events#search"
+  //           >
+  //             Other Events {getDefaultIconForCMSButton("chevron-right")}
+  //           </Button>
+  //         </div>
+  //       }
+  //     />
+  //   </div>
+  // );
 }
 
 type EventDetailsProps = {

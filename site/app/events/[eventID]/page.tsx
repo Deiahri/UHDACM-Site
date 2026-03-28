@@ -62,8 +62,6 @@ export default async function EventPage({
     }
   }
 
-  return <span>{eventID} gooch</span>;
-
 
   return (
     <WrapInNavbarAndFooter>
