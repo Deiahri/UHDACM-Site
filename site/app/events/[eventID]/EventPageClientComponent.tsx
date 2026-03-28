@@ -138,7 +138,19 @@ export default function EventPageClientComponent({
 
 
       <NavbarPadding />
-      <MainHeroSection
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <MainHeroSection
         spanText="EVENT"
         title={event.name}
         leftStyle={{ flex: 1 }}
@@ -155,19 +167,7 @@ export default function EventPageClientComponent({
             {hasGallery && <ViewGalleryButton />}
           </div>
         }
-      />
-
-
-
-
-
-
-
-
-
-
-
-
+      /> */}
 
       {/* <div
         style={{
@@ -227,24 +227,7 @@ export default function EventPageClientComponent({
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {hasGallery && (
+      {/* {hasGallery && (
         <div
           id={GALLERY_SECTION_ID}
           style={{
@@ -260,7 +243,15 @@ export default function EventPageClientComponent({
           </div>
           <GalleryGrid media={media} />
         </div>
-      )}
+      )} */}
+
+
+
+
+
+
+
+
       <CallToActionSection
         title={`Show up, Schedule, Share`}
         subtitle="Your next step is your best step. Be sure to make it count!"
